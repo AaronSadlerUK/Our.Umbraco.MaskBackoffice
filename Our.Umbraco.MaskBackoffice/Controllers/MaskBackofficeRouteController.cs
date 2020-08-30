@@ -6,7 +6,7 @@ namespace Our.Umbraco.MaskBackoffice.Controllers
     {
         public ActionResult Default()
         {
-            return new HttpNotFoundResult();
+            return Redirect(AppSettingsManager.GetBackofficeRedirect());
         }
     }
 }

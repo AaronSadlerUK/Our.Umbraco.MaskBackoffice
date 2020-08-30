@@ -4,7 +4,10 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Our.Umbraco.MaskBackoffice.Controllers;
 using Umbraco.Core.Configuration;
+using Umbraco.Core.Models.PublishedContent;
+using Umbraco.Web;
 using Umbraco.Web.Editors;
+using Umbraco.Web.Mvc;
 
 namespace Our.Umbraco.MaskBackoffice.Components
 {
@@ -45,7 +48,7 @@ namespace Our.Umbraco.MaskBackoffice.Components
                     new[] { typeof(BackOfficeController).Namespace });
 
                 RouteTable.Routes.MapRoute(
-                    "Umbraco_back_office2",
+                    "Umbraco_back_office_mask",
                     _globalSettings.GetUmbracoMvcArea() + "/{action}/{id}",
                     new { controller = "MaskBackofficeRoute", action = "Default", id = UrlParameter.Optional },
                     new[] { typeof(MaskBackofficeRouteController).Namespace });

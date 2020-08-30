@@ -25,5 +25,15 @@ namespace Our.Umbraco.MaskBackoffice
             throw new Exception("\"Our.MaskBackoffice.Domain\" is missing in AppSettings.");
         }
 
+        public static string GetBackofficeRedirect()
+        {
+            if (ConfigurationManager.AppSettings["Our.MaskBackoffice.Redirect"] != null)
+            {
+                return ConfigurationManager.AppSettings["Our.MaskBackoffice.Redirect"];
+            }
+
+            throw new Exception("\"Our.MaskBackoffice.Redirect\" is missing in AppSettings.");
+        }
+
     }
 }
