@@ -25,7 +25,7 @@ namespace Our.Umbraco.MaskBackoffice.Components
             if (AppSettingsManager.BackofficeMaskEnabled())
             {
                 var routes = RouteTable.Routes;
-                routes.RemoveAt(5);
+                routes.Remove(RouteTable.Routes["Umbraco_back_office"]);
                 // Custom route to MyProductController which will use a node with a specific ID as the
                 // IPublishedContent for the current rendering page
                 //RouteTable.Routes.MapRoute(
