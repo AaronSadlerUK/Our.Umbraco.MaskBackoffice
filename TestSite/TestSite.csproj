@@ -319,6 +319,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Our.Umbraco.MaskBackoffice\Our.Umbraco.MaskBackoffice.csproj">
+      <Project>{7417195b-a433-435f-96c1-5537e6e58861}</Project>
+      <Name>Our.Umbraco.MaskBackoffice</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
