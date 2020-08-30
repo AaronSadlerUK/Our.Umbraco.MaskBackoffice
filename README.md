@@ -1,6 +1,6 @@
 # Getting started
 
-This package will allow you to mask the backoffice behind a subdomain.
+This package will allow you to mask the umbraco backoffice behind a subdomain.
 
 ### Installation
 

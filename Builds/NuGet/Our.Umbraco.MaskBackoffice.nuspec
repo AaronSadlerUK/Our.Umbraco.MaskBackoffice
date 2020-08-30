@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Our.Umbraco.MaskBackoffice</id>
+    <version>1.0.0</version>
+    <title>Our.Umbraco.MaskBackoffice</title>
+    <authors>Aaron Sadler</authors>
+    <owners>Aaron Sadler</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/AaronSadlerUK/Our.Umbraco.MaskBackoffice</projectUrl>
+    <icon>MaskBackoffice-Logo.png</icon>
+    <summary>This package will allow you to mask the Umbraco backoffice behind a subdomain.</summary>
+    <description>This package will allow you to mask the Umbraco backoffice behind a subdomain.</description>
+    <releaseNotes><![CDATA[Initial Release]]></releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>umbraco, umbraco-cms, MaskBackoffice</tags>
+	<dependencies>
+	  <group targetFramework=".NETFramework4.7.2">
+		  <dependency id="UmbracoCms.Web" version="8.6.0" />
+		  <dependency id="UmbracoCms.Core" version="8.6.0" />
+	  </group>
+    </dependencies>
+  </metadata>
+      <files>
+	  <file src="..\..\Our.Umbraco.MaskBackoffice\bin\Release\Our.Umbraco.MaskBackoffice.dll" target="lib\net472" /> 
+      <file src="..\MaskBackoffice-Logo.png"/>
+    </files>
+</package>
