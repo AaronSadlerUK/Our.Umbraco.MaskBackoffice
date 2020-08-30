@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Our.Umbraco.MaskBackoffice</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Our.Umbraco.MaskBackoffice</title>
     <authors>Aaron Sadler</authors>
     <owners>Aaron Sadler</owners>
@@ -12,7 +12,7 @@
     <icon>MaskBackoffice-Logo.png</icon>
     <summary>This package will allow you to mask the Umbraco backoffice behind a subdomain.</summary>
     <description>This package will allow you to mask the Umbraco backoffice behind a subdomain.</description>
-    <releaseNotes><![CDATA[Initial Release]]></releaseNotes>
+    <releaseNotes><![CDATA[Changed to remove umbraco route by name instead of index]]></releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>umbraco, umbraco-cms, MaskBackoffice</tags>
 	<dependencies>
