@@ -4,10 +4,10 @@ This package will allow you to mask the umbraco backoffice behind a subdomain.
 
 ### Installation
 
-Our.Umbraco.MaskBackoffice is available from [Our Umbraco](#), [NuGet](#), or as a manual download directly from GitHub.
+Our.Umbraco.MaskBackoffice is available from [Our Umbraco](https://our.umbraco.com/packages/backoffice-extensions/ourumbracomaskbackoffice/), [NuGet](https://www.nuget.org/packages/Our.Umbraco.MaskBackoffice), or as a manual download directly from GitHub.
 
 #### NuGet package repository
-To [install UI from NuGet](#), run the following command in your instance of Visual Studio.
+To [install UI from NuGet](https://www.nuget.org/packages/Our.Umbraco.MaskBackoffice), run the following command in your instance of Visual Studio.
 
     PM> Install-Package Our.Umbraco.MaskBackoffice
 
