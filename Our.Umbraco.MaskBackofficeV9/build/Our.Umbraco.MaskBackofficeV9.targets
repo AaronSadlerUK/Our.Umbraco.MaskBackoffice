@@ -1,0 +1,27 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <OurUmbracoMaskBackofficeV9ContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Our.Umbraco.MaskBackofficeV9\**\*.*</OurUmbracoMaskBackofficeV9ContentFilesPath>
+    </PropertyGroup>
+
+    <Target Name="CopyOurUmbracoMaskBackofficeV9Assets" BeforeTargets="Build">
+        <ItemGroup>
+            <OurUmbracoMaskBackofficeV9ContentFiles Include="$(OurUmbracoMaskBackofficeV9ContentFilesPath)" />
+        </ItemGroup>
+        <Message Text="Copying Our.Umbraco.MaskBackofficeV9 files: $(OurUmbracoMaskBackofficeV9ContentFilesPath) - #@(OurUmbracoMaskBackofficeV9ContentFiles->Count()) files"  Importance="high" />
+        <Copy
+            SourceFiles="@(OurUmbracoMaskBackofficeV9ContentFiles)"
+            DestinationFiles="@(OurUmbracoMaskBackofficeV9ContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Our.Umbraco.MaskBackofficeV9\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+    </Target>
+
+    <Target Name="ClearOurUmbracoMaskBackofficeV9Assets" BeforeTargets="Clean">
+        <ItemGroup>
+            <OurUmbracoMaskBackofficeV9Dir Include="$(MSBuildProjectDirectory)\App_Plugins\Our.Umbraco.MaskBackofficeV9\" />
+        </ItemGroup>
+        <Message Text="Clear old Our.Umbraco.MaskBackofficeV9 data"  Importance="high" />
+        <RemoveDir Directories="@(OurUmbracoMaskBackofficeV9Dir)"  />
+    </Target>
+
+</Project>

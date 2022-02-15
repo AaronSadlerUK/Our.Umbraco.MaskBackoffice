@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.MaskBackoffice"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSiteV9", "TestSiteV9\TestSiteV9.csproj", "{AD2B4174-1248-494C-B917-981EB781D974}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Our.Umbraco.MaskBackofficeV9", "Our.Umbraco.MaskBackofficeV9\Our.Umbraco.MaskBackofficeV9.csproj", "{7BD5E8D2-FD62-4C73-8613-6E06887C1C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AD2B4174-1248-494C-B917-981EB781D974}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD2B4174-1248-494C-B917-981EB781D974}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD2B4174-1248-494C-B917-981EB781D974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD5E8D2-FD62-4C73-8613-6E06887C1C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD5E8D2-FD62-4C73-8613-6E06887C1C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD5E8D2-FD62-4C73-8613-6E06887C1C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD5E8D2-FD62-4C73-8613-6E06887C1C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
