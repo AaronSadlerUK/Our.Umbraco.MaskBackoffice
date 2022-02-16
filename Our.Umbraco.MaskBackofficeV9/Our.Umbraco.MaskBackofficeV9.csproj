@@ -2,13 +2,23 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ContentTargetFolders>.</ContentTargetFolders>
-        <Product>Our.Umbraco.MaskBackofficeV9</Product>
-        <PackageId>Our.Umbraco.MaskBackofficeV9</PackageId>
+        <PackageId>Our.Umbraco.MaskBackoffice</PackageId>
         <Title>Our.Umbraco.MaskBackofficeV9</Title>
-        <Description>...</Description>
-        <Product>...</Product>
-        <PackageTags>umbraco plugin package</PackageTags>
+        <Description>Hide the backoffice behind a specific domain or subdomain</Description>
+        <Product>Our Umbraco MaskBackoffice</Product>
+        <PackageTags>umbraco;mask backoffice</PackageTags>
         <RootNamespace>Our.Umbraco.MaskBackofficeV9</RootNamespace>
+        <Version>2.0.0-beta</Version>
+        <Copyright>UmbHost Limited</Copyright>
+        <PackageIcon>MaskBackoffice-Logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/AaronSadlerUK/Our.Umbraco.MaskBackoffice</PackageProjectUrl>
+        <Company>UmbHost Limited</Company>
+        <Authors>Our.Umbraco.MaskBackoffice</Authors>
+        <RepositoryUrl>https://github.com/AaronSadlerUK/Our.Umbraco.MaskBackoffice</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,5 +40,16 @@
             <Pack>True</Pack>
             <PackagePath>buildTransitive</PackagePath>
         </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="..\Builds\MaskBackoffice-Logo.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
     </ItemGroup>
 </Project>
