@@ -24,7 +24,7 @@ namespace Our.Umbraco.MaskBackofficeV9.ActionResults
             _message = message;
         }
         
-        public new async Task ExecuteResultAsync(ActionContext context)
+        public async Task ExecuteResultAsync(ActionContext context)
         {
             HttpResponse response = context.HttpContext.Response;
 
