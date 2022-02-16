@@ -11,7 +11,39 @@ To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.MaskBackoffic
 
     PM> Install-Package Our.Umbraco.MaskBackoffice
 
-# Usage
+# Usage (V2 - Umbraco V9)
+
+You will need to add the following keys to your Web.Config:
+
+      "OurUmbracoMaskBackoffice": {
+        "Enabled": boolean,
+        "ViewName": string,
+        "UseRedirect": boolean,
+        "RedirectUrl": string,
+        "Domains": [
+          string
+        ]
+      }
+
+# Configuration
+
+## Enabled
+This configuration setting will enable / disable the route override.
+
+## ViewName
+This configuration setting sets the view to be shown when returning a not found result, this defaults to "MaskBackofficeNotFound.cshtml"
+
+## UseRedirect
+This configuration setting will enable use of a redirect url instead of returning a not found error.
+
+## RedirectUrl
+This configuration setting sets the redirect target, it can be a absolute or relative url.
+
+## Domains
+This configuration is the domains / subdomains you would like to allow access to the backoffice.
+
+
+# Usage (V1 - Umbraco V8)
 
 You will need to add the following keys to your Web.Config:
 
