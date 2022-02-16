@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Our.Umbraco.MaskBackofficeV9.Controllers;
+using Umbraco.Cms.Core;
 using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.Configuration.Models;
 using Umbraco.Cms.Core.DependencyInjection;
@@ -28,7 +29,7 @@ public class OverrideBackofficeRoute : IComposer
                     var rootSegment = $"{globalSettings.GetBackOfficePath(hostingEnvironment)}";
                     endpoints.MapUmbracoRoute<MaskBackofficeController>(
                         rootSegment,
-                        string.Empty,
+                        Constants.Web.Mvc.BackOfficeArea,
                         string.Empty,
                         "Default",
                         includeControllerNameInRoute: false,
