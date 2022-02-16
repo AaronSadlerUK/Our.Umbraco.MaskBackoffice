@@ -10,7 +10,6 @@ namespace Our.Umbraco.MaskBackofficeV9.ActionResults
     /// </summary>
     public class NotFoundResult : IActionResult
     {
-        private readonly string _message;
         private readonly OurUmbracoMaskBackoffice _config;
 
         /// <summary>
@@ -18,10 +17,9 @@ namespace Our.Umbraco.MaskBackofficeV9.ActionResults
         /// </summary>
         /// 
 
-        public NotFoundResult(OurUmbracoMaskBackoffice config, string message = null)
+        public NotFoundResult(OurUmbracoMaskBackoffice config)
         {
             _config = config;
-            _message = message;
         }
         
         public async Task ExecuteResultAsync(ActionContext context)
