@@ -13,7 +13,7 @@ To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.MaskBackoffic
 
 # Usage (V2 - Umbraco V9)
 
-You will need to add the following keys to your Web.Config:
+You will need to add the following keys to your appsettings.json:
 
       "OurUmbracoMaskBackoffice": {
         "Enabled": boolean,
